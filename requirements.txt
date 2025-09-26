@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+transformers>=4.30
+datasets
+torch
+accelerate
+peft
+evaluate
+sentencepiece
+tokenizers

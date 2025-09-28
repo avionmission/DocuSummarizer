@@ -21,7 +21,7 @@ python src/train.py
 
 ## 3. Run API
 ```bash
-uvicorn src.inference_server:app --reload --port 8000
+uvicorn src.server:app --reload --port 8000
 ```
 
 ## 4. Test
@@ -29,7 +29,7 @@ Using curl:
 ```bash
 curl -X POST "http://127.0.0.1:8000/summarize" \
 -H "Content-Type: application/json" \
--d '{"text":"The company reported a 12% increase in Q4 revenue driven by cloud services."}'
+-d '{"text": "#Person1#: Hi, Mr. Smith. I'\''m Doctor Hawkins. Why are you here today?\n#Person2#: I found it would be a good idea to get a check-up.\n#Person1#: Yes, well, you haven'\''t had one for 5 years. You should have one every year.\n#Person2#: I know. I figure as long as there is nothing wrong, why go see the doctor?\n#Person1#: Well, the best way to avoid serious illnesses is to find out about them early.\n#Person2#: Ok, thanks doctor."}'
 ```
 
 # Structure
@@ -37,7 +37,7 @@ curl -X POST "http://127.0.0.1:8000/summarize" \
 client/                  # React client to test the inference server
 src/
  ├─ train.py             # Fine-tune on EDGAR-CORPUS
- ├─ inference_server.py  # FastAPI microservice
+ ├─ server.py            # FastAPI microservice
 outputs/                 # Saved models
 requirements.txt
 README.md

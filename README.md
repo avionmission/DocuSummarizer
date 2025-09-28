@@ -1,5 +1,7 @@
 # 📄 DocuSummarizer
 
+Temporarily trained on: https://huggingface.co/datasets/knkarthick/dialogsum
+
 DocuSummarizer is a domain-specific summarization service for **finance documents**.  
 It fine-tunes **Flan-T5-small** on the **[EDGAR-CORPUS](https://huggingface.co/datasets/lmqg/edgar-corpus)** dataset and serves summaries via a **FastAPI** microservice.
 
@@ -12,7 +14,7 @@ cd DocuSummarizer
 pip install -r requirements.txt
 ```
 
-## 2, Training (small subset for demo)
+## 2. Training (small subset for demo)
 ```bash
 python src/train.py
 ```

@@ -5,6 +5,8 @@ evaluate>=0.4.0
 accelerate>=0.34.0
 peft>=0.13.0
 torch>=2.2.0
+torchdata
+loralib
 
 # API
 fastapi>=0.115.0
@@ -13,6 +15,7 @@ uvicorn>=0.30.0
 # Utils
 pydantic>=2.8.0
 numpy>=1.26.0
+pandas
 
 # Optional (for demo notebooks & evaluation)
 jupyter

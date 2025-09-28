@@ -1,1 +1,4 @@
 venv
+src/.ipynb_checkpoint
+src/__pycache__
+saved_model
